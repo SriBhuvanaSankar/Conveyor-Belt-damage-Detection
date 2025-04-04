@@ -2,7 +2,8 @@
 <h3>Using YOLOV8 to detect and segment the damage in the conveyor belt. with preprocessing</h3>
 
 We have worked on a confidential dataset from NLC, so the dataset cannot be added in this project
-sample image 
+
+<h5>sample image</h5>
 ![image](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/no_damage.jpeg)
 ![image](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/damage.jpeg)
 
