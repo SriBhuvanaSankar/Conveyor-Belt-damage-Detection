@@ -54,6 +54,3 @@ The YOLOv8 model was trained using `Train.py`, leveraging the prepared dataset a
 The trained model successfully detects and segments damaged areas on the conveyor belt. Future work includes real-time deployment and further improvements in segmentation accuracy.
 
 ---
-
-This README has been updated with the content from the report.
-
