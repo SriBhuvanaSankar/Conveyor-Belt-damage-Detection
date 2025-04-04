@@ -3,7 +3,8 @@
 
 We have worked on a confidential dataset from NLC, so the dataset cannot be added in this project
 
-<h5>sample image</h5>
+<h4>Sample image</h4>
+
 ![image](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/no_damage.jpeg)
 ![image](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/damage.jpeg)
 
