@@ -1,6 +1,8 @@
 # Conveyor-Belt-damage-Detection
 <h3>Using YOLOV8 to detect and segment the damage in the conveyor belt. with preprocessing</h3>
 
+We have worked on a confidential dataset from NLC, so the dataset cannot be added in this project
+
 <b>Step-1:</b>
 First to avoid external disturbance in the image we cropped conveyor belt from the rest of the image using Cropping_belt.py
 by setting the color range of our dataset
