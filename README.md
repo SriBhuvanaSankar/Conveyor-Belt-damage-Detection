@@ -1,26 +1,59 @@
-# Conveyor-Belt-damage-Detection
-<h3>Using YOLOV8 to detect and segment the damage in the conveyor belt. with preprocessing</h3>
+# Conveyor-Belt-Damage-Detection
 
-We have worked on a confidential dataset from NLC, so the dataset cannot be added in this project
+## Overview
+This project focuses on detecting and segmenting damage in conveyor belts using YOLOv8. The system preprocesses images to remove external disturbances and enhances detection through edge-based ground truth generation.
 
-<h4>Sample image</h4>
+## Dataset
+We have used a confidential dataset from NLC; therefore, the dataset cannot be included in this repository.
 
-![image](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/no_damage.jpeg)
-![image](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/damage.jpeg)
+## Sample Images
 
+![No Damage](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/no_damage.jpeg)
+![Damage](https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection/blob/main/damage.jpeg)
 
-<b>Step-1:</b>
-First to avoid external disturbance in the image we cropped conveyor belt from the rest of the image using Cropping_belt.py
-by setting the color range of our dataset
+## Methodology
 
-<b>Step-2:</b>
-For further annotation purpose we applied Canny edge Detection and Morphological Dilation to get a Ground truth,, which help in identify the damage. Here we used Ground_truth.py
+### Step 1: Preprocessing
+To remove external disturbances, we cropped the conveyor belt region using `Cropping_belt.py` by defining the color range of the dataset.
 
-<b>Step-3:</b>
-We manually annotated the Damage using Makesense.ai and Exported annotation in yolo supported format
+### Step 2: Ground Truth Generation
+For annotation purposes, we applied Canny edge detection and morphological dilation using `Ground_truth.py`. This helped in identifying the damaged areas in the conveyor belt.
 
-<b>Step-4:</b> 
-Created Data.yaml for model training
+### Step 3: Manual Annotation
+We manually annotated the damage using [Makesense.ai](https://www.makesense.ai/) and exported the annotations in a YOLO-supported format.
 
-<b>Step-5:</b>
-Train the model usinf Train.py
+### Step 4: Data Preparation
+A `data.yaml` file was created to configure the dataset for YOLOv8 model training.
+
+### Step 5: Model Training
+The YOLOv8 model was trained using `Train.py`, leveraging the prepared dataset and annotations.
+
+## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SriBhuvanaSankar/Conveyor-Belt-damage-Detection.git
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run preprocessing:
+   ```bash
+   python Cropping_belt.py
+   ```
+4. Generate ground truth:
+   ```bash
+   python Ground_truth.py
+   ```
+5. Train the model:
+   ```bash
+   python Train.py
+   ```
+
+## Results
+The trained model successfully detects and segments damaged areas on the conveyor belt. Future work includes real-time deployment and further improvements in segmentation accuracy.
+
+---
+
+This README has been updated with the content from the report.
+
